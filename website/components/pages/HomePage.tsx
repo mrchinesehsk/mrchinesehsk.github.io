@@ -3,6 +3,7 @@ import Link from "next/link";
 import { dictionaries, href, type Locale } from "@/content";
 import { Section, SectionTitle } from "@/components/Section";
 import CtaBand from "@/components/CtaBand";
+import CertificateGallery from "@/components/CertificateGallery";
 
 export default function HomePage({ locale }: { locale: Locale }) {
   const dict = dictionaries[locale];
@@ -29,6 +30,17 @@ export default function HomePage({ locale }: { locale: Locale }) {
                 {dict.cta.seeCourses}
               </Link>
             </div>
+            {locale === "fa" && (
+              <a
+                href={dict.phone.tel}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex items-center gap-2 rounded-full border border-line-gold bg-gold/10 px-4 py-2 text-sm font-semibold text-gold-bright transition-colors hover:bg-gold/15"
+              >
+                <span aria-hidden="true">🎁</span>
+                یک جلسه آزمایشی رایگان پس از پیش‌ثبت‌نام
+              </a>
+            )}
             <p className="mt-8 text-sm tracking-wide text-dim" dir="ltr">
               {dict.brand.sloganIntl} · {dict.brand.sloganZh}
             </p>
@@ -160,6 +172,42 @@ export default function HomePage({ locale }: { locale: Locale }) {
         </div>
       </Section>
 
+      {locale === "fa" && (
+        <div className="border-y border-line bg-surface/50">
+          <Section>
+            <div className="bg-lattice relative overflow-hidden rounded-2xl border border-line-gold bg-surface px-6 py-9 shadow-[0_18px_55px_-30px_rgba(201,162,75,0.45)] sm:px-10 sm:py-11">
+              <div
+                aria-hidden="true"
+                className="absolute -left-16 -top-20 h-56 w-56 rounded-full bg-gold/10 blur-3xl"
+              />
+              <div className="relative grid items-center gap-8 lg:grid-cols-[1fr_auto]">
+                <div>
+                  <span className="kicker">یک فرصت برای انتخاب مطمئن‌تر</span>
+                  <h2 className="font-display mt-4 text-2xl leading-relaxed text-fg sm:text-3xl">
+                    هنوز برای ثبت‌نام مطمئن نیستید؟
+                  </h2>
+                  <p className="mt-4 max-w-3xl text-base leading-8 text-dim">
+                    پس از پیش‌ثبت‌نام، در یک جلسه آزمایشی رایگان شرکت کنید، با روش تدریس استاد و فضای کلاس آشنا شوید و سپس با اطمینان برای ادامه مسیر تصمیم بگیرید.
+                  </p>
+                  <p className="mt-3 text-sm font-medium leading-7 text-gold-bright">
+                    شرکت در جلسه آزمایشی به شما کمک می‌کند پیش از پرداخت شهریه، تجربه‌ای واقعی از کلاس داشته باشید.
+                  </p>
+                </div>
+                <a
+                  href={dict.phone.tel}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-gold w-full whitespace-nowrap text-base sm:w-auto"
+                  aria-label="رزرو جلسه آزمایشی رایگان در تلگرام"
+                >
+                  رزرو جلسه آزمایشی رایگان
+                </a>
+              </div>
+            </div>
+          </Section>
+        </div>
+      )}
+
       {/* ── Learner path ─────────────────────────────────────────── */}
       <div className="border-y border-line bg-surface/50">
         <Section>
@@ -177,6 +225,20 @@ export default function HomePage({ locale }: { locale: Locale }) {
           </p>
         </Section>
       </div>
+
+      {locale === "fa" && (
+        <Section>
+          <SectionTitle
+            kicker="MR CHINESE"
+            title="نمونه گواهی‌نامه‌های آموزشی"
+            sub="نمونه گواهی‌هایی که پس از ارزیابی آموزشی و تکمیل هر مرحله برای زبان‌آموزان صادر می‌شوند. برای مشاهده جزئیات، روی هر مدرک کلیک کنید."
+          />
+          <CertificateGallery />
+          <p className="mt-8 max-w-4xl rounded-xl border border-line-gold bg-surface px-5 py-4 text-sm leading-7 text-fg">
+            این گواهی‌ها توسط مجموعه آموزشی مستر چاینیز و پس از تکمیل دوره و ارزیابی آموزشی صادر می‌شوند و جایگزین مدرک رسمی آزمون بین‌المللی HSK نیستند.
+          </p>
+        </Section>
+      )}
 
       <CtaBand locale={locale} />
     </>
