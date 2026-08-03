@@ -60,6 +60,8 @@ export default function Footer({ locale }: { locale: Locale }) {
             </ul>
             <a
               href={dict.phone.tel}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-6 inline-block text-base font-bold text-gold-bright"
               dir="ltr"
             >

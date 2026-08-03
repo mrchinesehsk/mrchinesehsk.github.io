@@ -15,18 +15,25 @@ export default function ContactPage({ locale }: { locale: Locale }) {
 
       <Section>
         <div className="grid gap-6 lg:grid-cols-2">
-          {/* Phone — primary action */}
+          {/* Direct messaging — primary action */}
           <div className="card border-line-gold p-8 text-center">
             <h2 className="font-display text-2xl text-fg">{c.phoneTitle}</h2>
+            <p className="mt-5 whitespace-pre-line text-sm leading-7 text-dim">{c.phoneNote}</p>
             <a
               href={dict.phone.tel}
-              className="font-display mt-6 block text-4xl tracking-wider text-gold-bright"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-display mt-6 block text-2xl tracking-wider text-gold-bright"
               dir="ltr"
             >
               {dict.phone.display}
             </a>
-            <p className="mt-5 text-sm leading-7 text-dim">{c.phoneNote}</p>
-            <a href={dict.phone.tel} className="btn btn-gold mt-7 text-base">
+            <a
+              href={dict.phone.tel}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-gold mt-7 text-base"
+            >
               {dict.cta.consult}
             </a>
           </div>

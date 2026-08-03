@@ -22,7 +22,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
               {home.heroSub}
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
-              <a href={dict.phone.tel} className="btn btn-gold text-base">
+              <a href={dict.phone.tel} target="_blank" rel="noopener noreferrer" className="btn btn-gold text-base">
                 {dict.cta.consult}
               </a>
               <Link href={href(locale, "/courses/")} className="btn btn-outline text-base">

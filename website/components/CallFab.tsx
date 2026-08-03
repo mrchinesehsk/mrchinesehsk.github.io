@@ -7,6 +7,8 @@ export default function CallFab({ locale }: { locale: Locale }) {
   return (
     <a
       href={dict.phone.tel}
+      target="_blank"
+      rel="noopener noreferrer"
       className="btn btn-gold fixed bottom-5 end-5 z-50 shadow-[0_10px_30px_-8px_rgba(201,162,75,0.55)] md:hidden"
       aria-label={dict.cta.call}
     >

@@ -18,8 +18,8 @@ export const zh: Dictionary = {
   },
 
   phone: {
-    display: "+98 911 297 1179",
-    tel: "tel:+989112971179",
+    display: "@Mrchinese_Hsk",
+    tel: "https://t.me/Mrchinese_Hsk",
   },
 
   nav: {
@@ -32,7 +32,7 @@ export const zh: Dictionary = {
 
   cta: {
     consult: "预约咨询",
-    call: "联系老师",
+    call: "预报名",
     seeCourses: "查看课程",
     aboutFounder: "认识老师",
     allFaq: "全部常见问题",
@@ -372,7 +372,7 @@ export const zh: Dictionary = {
       },
       {
         q: "如何了解学费和新学期的开课时间？",
-        a: "学费、名额和时间安排每学期可能有所变化。欲了解新学期详情，请致电或发信息至 +98 911 297 1179。",
+        a: "学费、名额和时间安排每学期可能有所变化。欲了解新学期详情，请通过 Telegram 或 Bale 发信息。",
       },
       {
         q: "有机会与中国人交流吗？",
@@ -388,7 +388,7 @@ export const zh: Dictionary = {
       },
       {
         q: "如何预约咨询和报名？",
-        a: "只需致电或发信息至 +98 911 297 1179，我们将了解您的目标和情况，并为您推荐合适的起点。",
+        a: "只需通过 Telegram 或 Bale 发信息，我们将了解您的目标和情况，并为您推荐合适的起点。",
       },
     ],
   },
@@ -396,21 +396,23 @@ export const zh: Dictionary = {
   contact: {
     title: "联系、咨询与报名",
     sub: "第一步是一次简短的交流：告诉我们您的目标，我们将为您推荐合适的起点。",
-    phoneTitle: "直接致电或给老师发信息",
-    phoneNote: "欲了解新学期的开课时间、名额与学费，请致电或发送信息。",
+    phoneTitle: "直接给老师发信息",
+    phoneNote: "预报名请通过 Telegram 或 Bale 发送以下信息 👇\n\n姓名：\n\n年龄：\n\n职业或学历：\n\n学习目标：\n\n了解我们的渠道：\n\n有效联系电话：",
     locationTitle: "上课地点",
     location: "伊朗赞詹市 Karmandan 区 Mahdavi 大道 Radman 教育机构",
     locationNote: "更详细的地址将在预约或报名后提供。",
     socialTitle: "社交媒体",
     socials: [
       {
-        name: "Telegram 频道：中文与对华贸易",
-        handle: "@mrchinese_business",
-        href: "https://t.me/mrchinese_business",
+        name: "MR CHINESE Telegram",
+        handle: "@Mrchinese_Hsk",
+        href: "https://t.me/Mrchinese_Hsk",
       },
-      { name: "Bale 平台 MR CHINESE 教学频道" },
-      { name: "Eitaa" },
-      { name: "Rubika" },
+      {
+        name: "Bale 平台 MR CHINESE 教学频道",
+        handle: "ble.ir/mrchinese",
+        href: "https://ble.ir/mrchinese",
+      },
     ],
   },
 
@@ -425,7 +427,7 @@ export const zh: Dictionary = {
     home: {
       title: "MR CHINESE | 伊朗赞詹专业中文教育",
       description:
-        "以标准 HSK 教材为基础的中文教育，位于伊朗赞詹——5–7 人小班制课堂、老师每日答疑支持、实用会话与中国文化学习。欢迎来电咨询报名。",
+        "以标准 HSK 教材为基础的中文教育，位于伊朗赞詹——5–7 人小班制课堂、老师每日答疑支持、实用会话与中国文化学习。欢迎通过 Telegram 或 Bale 发信息咨询报名。",
     },
     courses: {
       title: "中文课程（HSK 1–3）| MR CHINESE",
@@ -445,7 +447,7 @@ export const zh: Dictionary = {
     contact: {
       title: "联系与报名 | MR CHINESE",
       description:
-        "咨询或报名 MR CHINESE（伊朗赞詹）中文课程，请致电或发信息至 +98 911 297 1179。",
+        "咨询或报名 MR CHINESE（伊朗赞詹）中文课程，请通过 Telegram 或 Bale 发信息。",
     },
   },
 };

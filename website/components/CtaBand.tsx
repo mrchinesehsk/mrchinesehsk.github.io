@@ -12,10 +12,10 @@ export default function CtaBand({ locale }: { locale: Locale }) {
         </h2>
         <p className="mt-4 text-dim">{dict.cta.consultLine}</p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <a href={dict.phone.tel} className="btn btn-gold text-base">
+          <a href={dict.phone.tel} target="_blank" rel="noopener noreferrer" className="btn btn-gold text-base">
             {dict.cta.consult}
           </a>
-          <a href={dict.phone.tel} className="text-lg font-bold text-gold-bright" dir="ltr">
+          <a href={dict.phone.tel} target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-gold-bright" dir="ltr">
             {dict.phone.display}
           </a>
         </div>

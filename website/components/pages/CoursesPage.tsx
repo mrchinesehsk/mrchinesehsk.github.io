@@ -74,7 +74,7 @@ export default function CoursesPage({ locale }: { locale: Locale }) {
           <article className="card border-line-gold p-6">
             <h3 className="font-display text-2xl text-gold-bright">{c.privateCourse.title}</h3>
             <p className="mt-4 text-sm leading-7 text-dim">{c.privateCourse.body}</p>
-            <a href={dict.phone.tel} className="btn btn-gold mt-6">
+            <a href={dict.phone.tel} target="_blank" rel="noopener noreferrer" className="btn btn-gold mt-6">
               {dict.cta.consult}
             </a>
           </article>

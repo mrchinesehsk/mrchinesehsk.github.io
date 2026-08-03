@@ -38,7 +38,7 @@ export interface Dictionary {
 
   phone: {
     display: string;
-    tel: string; // tel: href value
+    tel: string; // primary contact href value
   };
 
   nav: {

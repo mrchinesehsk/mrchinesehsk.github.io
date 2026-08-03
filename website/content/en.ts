@@ -18,8 +18,8 @@ export const en: Dictionary = {
   },
 
   phone: {
-    display: "+98 911 297 1179",
-    tel: "tel:+989112971179",
+    display: "@Mrchinese_Hsk",
+    tel: "https://t.me/Mrchinese_Hsk",
   },
 
   nav: {
@@ -32,7 +32,7 @@ export const en: Dictionary = {
 
   cta: {
     consult: "Request a consultation",
-    call: "Call the teacher",
+    call: "Pre-register",
     seeCourses: "View courses",
     aboutFounder: "Meet the teacher",
     allFaq: "All frequently asked questions",
@@ -377,7 +377,7 @@ export const en: Dictionary = {
       },
       {
         q: "How do we find out about tuition and the start of the new term?",
-        a: "Tuition, capacity and scheduling may change from term to term. For details of the new term, call or message +98 911 297 1179.",
+        a: "Tuition, capacity and scheduling may change from term to term. For details of the new term, send us a message on Telegram or Bale.",
       },
       {
         q: "Is it possible to connect with Chinese people?",
@@ -393,7 +393,7 @@ export const en: Dictionary = {
       },
       {
         q: "How do I arrange a consultation and enroll?",
-        a: "Simply call or message +98 911 297 1179. We will discuss your goal and situation and recommend the right starting path.",
+        a: "Simply send us a message on Telegram or Bale. We will discuss your goal and situation and recommend the right starting path.",
       },
     ],
   },
@@ -401,21 +401,23 @@ export const en: Dictionary = {
   contact: {
     title: "Contact, consultation and enrollment",
     sub: "The first step is a short conversation: share your goal with us, and we will recommend the right starting path.",
-    phoneTitle: "Call or message the teacher directly",
-    phoneNote: "To learn about the start date, capacity and tuition of the new term, call or send a message.",
+    phoneTitle: "Message the teacher directly",
+    phoneNote: "To pre-register, send the following details on Telegram or Bale 👇\n\nFull name:\n\nAge:\n\nOccupation or education:\n\nLearning goal:\n\nHow you found us:\n\nActive phone number:",
     locationTitle: "Class location",
     location: "Zanjan, Karmandan district, Mahdavi Boulevard, Radman institute teaching space",
     locationNote: "A more precise address is shared after coordination or enrollment.",
     socialTitle: "Social channels",
     socials: [
       {
-        name: "Telegram — Chinese language & business with China",
-        handle: "@mrchinese_business",
-        href: "https://t.me/mrchinese_business",
+        name: "MR CHINESE on Telegram",
+        handle: "@Mrchinese_Hsk",
+        href: "https://t.me/Mrchinese_Hsk",
       },
-      { name: "MR CHINESE channel on Bale" },
-      { name: "Eitaa" },
-      { name: "Rubika" },
+      {
+        name: "MR CHINESE channel on Bale",
+        handle: "ble.ir/mrchinese",
+        href: "https://ble.ir/mrchinese",
+      },
     ],
   },
 
@@ -430,7 +432,7 @@ export const en: Dictionary = {
     home: {
       title: "MR CHINESE | Chinese Language Courses in Zanjan, Iran",
       description:
-        "Chinese language education based on the standard HSK curriculum in Zanjan, Iran — semi-private classes of 5–7 learners, direct teacher support, practical conversation and Chinese culture. Call for consultation and enrollment.",
+        "Chinese language education based on the standard HSK curriculum in Zanjan, Iran — semi-private classes of 5–7 learners, direct teacher support, practical conversation and Chinese culture. Message us on Telegram or Bale for consultation and enrollment.",
     },
     courses: {
       title: "Chinese Courses (HSK 1–3) | MR CHINESE",
@@ -450,7 +452,7 @@ export const en: Dictionary = {
     contact: {
       title: "Contact & Enrollment | MR CHINESE",
       description:
-        "For consultation and enrollment in MR CHINESE Chinese language courses in Zanjan, call or message +98 911 297 1179.",
+        "For consultation and enrollment in MR CHINESE Chinese language courses in Zanjan, message us on Telegram or Bale.",
     },
   },
 };
