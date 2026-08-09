@@ -1,5 +1,6 @@
 import { dictionaries, type Locale } from "@/content";
 import { Section, SectionTitle } from "@/components/Section";
+import ContactChoice from "@/components/ContactChoice";
 
 export default function ContactPage({ locale }: { locale: Locale }) {
   const dict = dictionaries[locale];
@@ -19,23 +20,18 @@ export default function ContactPage({ locale }: { locale: Locale }) {
           <div className="card border-line-gold p-8 text-center">
             <h2 className="font-display text-2xl text-fg">{c.phoneTitle}</h2>
             <p className="mt-5 whitespace-pre-line text-sm leading-7 text-dim">{c.phoneNote}</p>
-            <a
-              href={dict.phone.tel}
-              target="_blank"
-              rel="noopener noreferrer"
+            <ContactChoice
+              locale={locale}
               className="font-display mt-6 block text-2xl tracking-wider text-gold-bright"
-              dir="ltr"
             >
               {dict.phone.display}
-            </a>
-            <a
-              href={dict.phone.tel}
-              target="_blank"
-              rel="noopener noreferrer"
+            </ContactChoice>
+            <ContactChoice
+              locale={locale}
               className="btn btn-gold mt-7 text-base"
             >
               {dict.cta.consult}
-            </a>
+            </ContactChoice>
           </div>
 
           <div className="flex flex-col gap-6">

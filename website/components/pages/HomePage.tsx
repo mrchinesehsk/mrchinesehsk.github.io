@@ -4,6 +4,7 @@ import { dictionaries, href, type Locale } from "@/content";
 import { Section, SectionTitle } from "@/components/Section";
 import CtaBand from "@/components/CtaBand";
 import CertificateGallery from "@/components/CertificateGallery";
+import ContactChoice from "@/components/ContactChoice";
 
 export default function HomePage({ locale }: { locale: Locale }) {
   const dict = dictionaries[locale];
@@ -23,23 +24,21 @@ export default function HomePage({ locale }: { locale: Locale }) {
               {home.heroSub}
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
-              <a href={dict.phone.tel} target="_blank" rel="noopener noreferrer" className="btn btn-gold text-base">
+              <ContactChoice locale={locale} className="btn btn-gold text-base">
                 {dict.cta.consult}
-              </a>
+              </ContactChoice>
               <Link href={href(locale, "/courses/")} className="btn btn-outline text-base">
                 {dict.cta.seeCourses}
               </Link>
             </div>
             {locale === "fa" && (
-              <a
-                href={dict.phone.tel}
-                target="_blank"
-                rel="noopener noreferrer"
+              <ContactChoice
+                locale={locale}
                 className="mt-5 inline-flex items-center gap-2 rounded-full border border-line-gold bg-gold/10 px-4 py-2 text-sm font-semibold text-gold-bright transition-colors hover:bg-gold/15"
               >
                 <span aria-hidden="true">🎁</span>
                 یک جلسه آزمایشی رایگان پس از پیش‌ثبت‌نام
-              </a>
+              </ContactChoice>
             )}
             <p className="mt-8 text-sm tracking-wide text-dim" dir="ltr">
               {dict.brand.sloganIntl} · {dict.brand.sloganZh}
@@ -187,21 +186,16 @@ export default function HomePage({ locale }: { locale: Locale }) {
                     هنوز برای ثبت‌نام مطمئن نیستید؟
                   </h2>
                   <p className="mt-4 max-w-3xl text-base leading-8 text-dim">
-                    پس از پیش‌ثبت‌نام، در یک جلسه آزمایشی رایگان شرکت کنید، با روش تدریس استاد و فضای کلاس آشنا شوید و سپس با اطمینان برای ادامه مسیر تصمیم بگیرید.
-                  </p>
-                  <p className="mt-3 text-sm font-medium leading-7 text-gold-bright">
-                    شرکت در جلسه آزمایشی به شما کمک می‌کند پیش از پرداخت شهریه، تجربه‌ای واقعی از کلاس داشته باشید.
+                    در یک جلسه آزمایشی رایگان شرکت کنید، با شیوه تدریس آشنا شوید و سپس با اطمینان تصمیم بگیرید.
                   </p>
                 </div>
-                <a
-                  href={dict.phone.tel}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <ContactChoice
+                  locale={locale}
                   className="btn btn-gold w-full whitespace-nowrap text-base sm:w-auto"
-                  aria-label="رزرو جلسه آزمایشی رایگان در تلگرام"
+                  ariaLabel="رزرو جلسه آزمایشی رایگان"
                 >
                   رزرو جلسه آزمایشی رایگان
-                </a>
+                </ContactChoice>
               </div>
             </div>
           </Section>
@@ -237,6 +231,68 @@ export default function HomePage({ locale }: { locale: Locale }) {
           <p className="mt-8 max-w-4xl rounded-xl border border-line-gold bg-surface px-5 py-4 text-sm leading-7 text-fg">
             این گواهی‌ها توسط مجموعه آموزشی مستر چاینیز و پس از تکمیل دوره و ارزیابی آموزشی صادر می‌شوند و جایگزین مدرک رسمی آزمون بین‌المللی HSK نیستند.
           </p>
+        </Section>
+      )}
+
+      {locale === "fa" && (
+        <div className="border-y border-line bg-surface/50">
+          <Section>
+            <div className="mx-auto max-w-4xl text-center">
+              <span className="kicker">پیش‌ثبت‌نام دوره جدید</span>
+              <h2 className="font-display mt-4 text-2xl leading-relaxed text-fg sm:text-3xl">
+                پیش‌ثبت‌نام و رزرو جلسه آزمایشی رایگان
+              </h2>
+              <p className="mt-4 text-base leading-8 text-dim">
+                برای پیش‌ثبت‌نام و رزرو جلسه آزمایشی رایگان، لطفاً مشخصات زیر را در بله یا تلگرام برای ما ارسال کنید:
+              </p>
+              <ul className="mx-auto mt-8 grid max-w-3xl gap-3 text-start sm:grid-cols-2">
+                {["نام و نام خانوادگی", "سن", "شماره تماس فعال", "هدف از یادگیری زبان چینی"].map((item) => (
+                  <li key={item} className="card flex items-center gap-3 px-5 py-4 text-sm font-semibold text-fg">
+                    <span aria-hidden="true" className="h-2 w-2 flex-none rotate-45 rounded-[2px] bg-red" />
+                    {item}
+                  </li>
+                ))}
+                <li className="card flex items-start gap-3 px-5 py-4 text-sm font-semibold leading-7 text-fg sm:col-span-2">
+                  <span aria-hidden="true" className="mt-2 h-2 w-2 flex-none rotate-45 rounded-[2px] bg-red" />
+                  از چه طریقی با مستر چاینیز آشنا شدید؟ (دیوار، رستم‌خانی، سایت، کانال‌های مستر چاینیز یا معرفی دوستان)
+                </li>
+              </ul>
+              <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+                <a href="https://ble.ir/mrchinese963" target="_blank" rel="noopener noreferrer" className="btn btn-gold min-h-12">
+                  ارسال مشخصات در بله — بدون نیاز به فیلترشکن
+                </a>
+                <a href="https://t.me/Mrchinese_Hsk" target="_blank" rel="noopener noreferrer" className="btn btn-outline min-h-12">
+                  ارسال مشخصات در تلگرام
+                </a>
+              </div>
+            </div>
+          </Section>
+        </div>
+      )}
+
+      {locale === "fa" && (
+        <Section>
+          <SectionTitle
+            kicker="کانال‌های رسمی مستر چاینیز"
+            title="هنوز برای شروع کلاس آماده نیستید؟"
+            sub="تا زمان شروع دوره‌ها، از مطالب آموزشی و تجاری مستر چاینیز استفاده کنید و اطلاعیه‌های ثبت‌نام و کلاس‌ها را از کانال‌های رسمی ما دنبال کنید."
+          />
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            <div className="card flex flex-col p-6">
+              <h3 className="font-display text-xl text-gold-bright">کانال آموزش زبان چینی در بله</h3>
+              <p className="mt-3 flex-1 text-sm leading-7 text-dim">واژگان، جمله‌های کاربردی، نکات HSK و اطلاعیه‌های کلاس‌ها</p>
+              <a href="https://ble.ir/mrchinese" target="_blank" rel="noopener noreferrer" className="btn btn-gold mt-6">
+                عضویت در کانال آموزشی بله
+              </a>
+            </div>
+            <div className="card flex flex-col p-6">
+              <h3 className="font-display text-xl text-gold-bright">کانال تجاری مستر چاینیز در تلگرام</h3>
+              <p className="mt-3 flex-1 text-sm leading-7 text-dim">محتوای زبان تجاری، ارتباط با چین و نکات کاربردی کسب‌وکار</p>
+              <a href="https://t.me/Mrchinese_Hsk" target="_blank" rel="noopener noreferrer" className="btn btn-outline mt-6">
+                عضویت در کانال تجاری تلگرام
+              </a>
+            </div>
+          </div>
         </Section>
       )}
 
