@@ -405,8 +405,8 @@ export const zh: Dictionary = {
     socials: [
       {
         name: "MR CHINESE Telegram",
-        handle: "@Mrchinese_Hsk",
-        href: "https://t.me/Mrchinese_Hsk",
+        handle: "@mrchinese_business",
+        href: "https://t.me/mrchinese_business",
       },
       {
         name: "Bale 平台 MR CHINESE 教学频道",

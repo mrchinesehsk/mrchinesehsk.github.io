@@ -410,8 +410,8 @@ export const en: Dictionary = {
     socials: [
       {
         name: "MR CHINESE on Telegram",
-        handle: "@Mrchinese_Hsk",
-        href: "https://t.me/Mrchinese_Hsk",
+        handle: "@mrchinese_business",
+        href: "https://t.me/mrchinese_business",
       },
       {
         name: "MR CHINESE channel on Bale",

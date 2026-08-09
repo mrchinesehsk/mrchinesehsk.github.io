@@ -424,8 +424,8 @@ export const fa: Dictionary = {
     socials: [
       {
         name: "کانال آموزشی تجاری مستر چاینیز در تلگرام",
-        handle: "@Mrchinese_Hsk",
-        href: "https://t.me/Mrchinese_Hsk",
+        handle: "@mrchinese_business",
+        href: "https://t.me/mrchinese_business",
       },
       {
         name: "کانال آموزشی مستر چاینیز در بله",

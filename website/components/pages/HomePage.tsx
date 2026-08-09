@@ -288,7 +288,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
             <div className="card flex flex-col p-6">
               <h3 className="font-display text-xl text-gold-bright">کانال تجاری مستر چاینیز در تلگرام</h3>
               <p className="mt-3 flex-1 text-sm leading-7 text-dim">محتوای زبان تجاری، ارتباط با چین و نکات کاربردی کسب‌وکار</p>
-              <a href="https://t.me/Mrchinese_Hsk" target="_blank" rel="noopener noreferrer" className="btn btn-outline mt-6">
+              <a href="https://t.me/mrchinese_business" target="_blank" rel="noopener noreferrer" className="btn btn-outline mt-6">
                 عضویت در کانال تجاری تلگرام
               </a>
             </div>
