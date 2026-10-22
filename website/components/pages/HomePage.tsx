@@ -45,17 +45,20 @@ export default function HomePage({ locale }: { locale: Locale }) {
             </p>
           </div>
 
-          <div className="relative mx-auto hidden max-w-md lg:block">
-            <div className="rounded-[2rem] border border-line-gold bg-[#f0ead9] p-5 shadow-2xl shadow-black/40">
+          <div className="relative mx-auto hidden w-full max-w-md flex-col items-center justify-center lg:flex">
+            <div className="grid h-72 w-72 place-items-center rounded-full border border-line-gold bg-[#f0ead9] p-8 shadow-2xl shadow-black/40 xl:h-80 xl:w-80">
               <Image
-                src="/brand/logo-primary.svg"
+                src="/brand/logo-symbol.svg"
                 alt="MR CHINESE — نشان گفت‌وگو، یین‌ویانگ و دو ماهی"
-                width={980}
-                height={940}
+                width={720}
+                height={720}
                 priority
                 className="h-auto w-full"
               />
             </div>
+            <p className="font-display mt-6 text-center text-3xl tracking-wide text-gold-bright">
+              {dict.brand.nameShort}
+            </p>
           </div>
         </div>
       </div>
@@ -71,14 +74,19 @@ export default function HomePage({ locale }: { locale: Locale }) {
               </p>
             ))}
           </div>
-          <div className="overflow-hidden rounded-xl border border-line-gold bg-[#f0ead9] p-6 sm:p-8">
-            <Image
-              src="/brand/logo-primary.svg"
-              alt="MR CHINESE"
-              width={980}
-              height={940}
-              className="mx-auto h-auto w-full max-w-sm"
-            />
+          <div className="flex flex-col items-center justify-center py-4">
+            <div className="grid h-52 w-52 place-items-center rounded-full border border-line-gold bg-[#f0ead9] p-6 shadow-xl shadow-black/30 sm:h-60 sm:w-60">
+              <Image
+                src="/brand/logo-symbol.svg"
+                alt="MR CHINESE"
+                width={720}
+                height={720}
+                className="h-auto w-full"
+              />
+            </div>
+            <p className="font-display mt-5 text-center text-2xl tracking-wide text-gold-bright">
+              {dict.brand.nameShort}
+            </p>
           </div>
         </div>
       </Section>
@@ -109,7 +117,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
         <div className="grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="relative mx-auto w-64 sm:w-72">
             <Image
-              src="/brand/founder.jpg"
+              src="/brand/founder-new.png"
               alt={home.founderTeaser.name}
               width={640}
               height={640}

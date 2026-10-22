@@ -16,7 +16,7 @@ export default function AboutPage({ locale }: { locale: Locale }) {
           <div className="mt-10 grid items-start gap-10 lg:grid-cols-[0.75fr_1.25fr]">
             <div className="mx-auto w-64 sm:w-80">
               <Image
-                src="/brand/founder.jpg"
+                src="/brand/founder-new.png"
                 alt={a.founder.name}
                 width={640}
                 height={640}
