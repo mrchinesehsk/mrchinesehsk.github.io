@@ -11,7 +11,13 @@ export default function Footer({ locale }: { locale: Locale }) {
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-sm">
             <div className="flex items-center gap-3">
-              <Image src="/brand/seal.jpg" alt="" width={40} height={40} className="rounded-md" />
+              <Image
+                src="/brand/logo-symbol.svg"
+                alt="MR CHINESE"
+                width={44}
+                height={44}
+                className="rounded-full border border-line-gold bg-[#f0ead9] p-1"
+              />
               <span className="font-display text-lg text-gold-bright">{dict.brand.name}</span>
             </div>
             <p className="mt-4 text-sm leading-7 text-dim">{dict.footer.tagline}</p>

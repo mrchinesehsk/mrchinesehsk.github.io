@@ -45,15 +45,17 @@ export default function HomePage({ locale }: { locale: Locale }) {
             </p>
           </div>
 
-          <div className="relative mx-auto hidden max-w-sm lg:block">
-            <Image
-              src="/brand/logo-dragon.jpg"
-              alt="MR CHINESE"
-              width={520}
-              height={520}
-              priority
-              className="[mask-image:radial-gradient(circle,black_55%,transparent_72%)]"
-            />
+          <div className="relative mx-auto hidden max-w-md lg:block">
+            <div className="rounded-[2rem] border border-line-gold bg-[#f0ead9] p-5 shadow-2xl shadow-black/40">
+              <Image
+                src="/brand/logo-primary.svg"
+                alt="MR CHINESE — نشان گفت‌وگو، یین‌ویانگ و دو ماهی"
+                width={980}
+                height={940}
+                priority
+                className="h-auto w-full"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -69,13 +71,13 @@ export default function HomePage({ locale }: { locale: Locale }) {
               </p>
             ))}
           </div>
-          <div className="card overflow-hidden p-0">
+          <div className="overflow-hidden rounded-xl border border-line-gold bg-[#f0ead9] p-6 sm:p-8">
             <Image
-              src="/brand/lockup-wide.jpg"
-              alt="MR CHINESE — Learn Chinese, Connect Cultures"
-              width={1280}
-              height={427}
-              className="w-full"
+              src="/brand/logo-primary.svg"
+              alt="MR CHINESE"
+              width={980}
+              height={940}
+              className="mx-auto h-auto w-full max-w-sm"
             />
           </div>
         </div>

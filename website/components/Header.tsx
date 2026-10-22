@@ -32,11 +32,11 @@ export default function Header({ locale }: { locale: Locale }) {
         {/* Brand */}
         <Link href={href(locale, "/")} className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <Image
-            src="/brand/seal.jpg"
-            alt=""
-            width={34}
-            height={34}
-            className="rounded-md"
+            src="/brand/logo-symbol.svg"
+            alt="MR CHINESE"
+            width={40}
+            height={40}
+            className="rounded-full border border-line-gold bg-[#f0ead9] p-1"
             priority
           />
           <span className="font-display hidden whitespace-nowrap text-lg tracking-wide text-gold-bright min-[480px]:inline">
