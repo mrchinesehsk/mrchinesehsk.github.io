@@ -46,18 +46,19 @@ export default function HomePage({ locale }: { locale: Locale }) {
           </div>
 
           <div className="relative mx-auto hidden w-full max-w-md flex-col items-center justify-center lg:flex">
-            <div className="grid h-72 w-72 place-items-center rounded-full border border-line-gold bg-[#f0ead9] p-8 shadow-2xl shadow-black/40 xl:h-80 xl:w-80">
-              <Image
-                src="/brand/logo-symbol.svg"
-                alt="MR CHINESE — نشان گفت‌وگو، یین‌ویانگ و دو ماهی"
-                width={720}
-                height={720}
-                priority
-                className="h-auto w-full"
-              />
-            </div>
-            <p className="font-display mt-6 text-center text-3xl tracking-wide text-gold-bright">
-              {dict.brand.nameShort}
+            <Image
+              src="/brand/logo-symbol-on-dark.svg"
+              alt="MR CHINESE — نشان گفت‌وگو، یین‌ویانگ و دو ماهی"
+              width={720}
+              height={720}
+              priority
+              className="h-auto w-72 drop-shadow-[0_18px_30px_rgba(0,0,0,0.35)] xl:w-80"
+            />
+            <p
+              className="font-display mt-6 text-center text-3xl tracking-wide text-gold-bright"
+              dir="ltr"
+            >
+              MR CHINESE
             </p>
           </div>
         </div>
@@ -75,17 +76,18 @@ export default function HomePage({ locale }: { locale: Locale }) {
             ))}
           </div>
           <div className="flex flex-col items-center justify-center py-4">
-            <div className="grid h-52 w-52 place-items-center rounded-full border border-line-gold bg-[#f0ead9] p-6 shadow-xl shadow-black/30 sm:h-60 sm:w-60">
-              <Image
-                src="/brand/logo-symbol.svg"
-                alt="MR CHINESE"
-                width={720}
-                height={720}
-                className="h-auto w-full"
-              />
-            </div>
-            <p className="font-display mt-5 text-center text-2xl tracking-wide text-gold-bright">
-              {dict.brand.nameShort}
+            <Image
+              src="/brand/logo-symbol-on-dark.svg"
+              alt="MR CHINESE"
+              width={720}
+              height={720}
+              className="h-auto w-52 drop-shadow-[0_14px_24px_rgba(0,0,0,0.3)] sm:w-60"
+            />
+            <p
+              className="font-display mt-5 text-center text-2xl tracking-wide text-gold-bright"
+              dir="ltr"
+            >
+              MR CHINESE
             </p>
           </div>
         </div>

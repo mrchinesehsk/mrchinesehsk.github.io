@@ -18,7 +18,9 @@ export default function Footer({ locale }: { locale: Locale }) {
                 height={44}
                 className="rounded-full border border-line-gold bg-[#f0ead9] p-1"
               />
-              <span className="font-display text-lg text-gold-bright">{dict.brand.name}</span>
+              <span className="font-display text-lg text-gold-bright" dir="ltr">
+                MR CHINESE
+              </span>
             </div>
             <p className="mt-4 text-sm leading-7 text-dim">{dict.footer.tagline}</p>
             <p className="mt-2 text-sm text-dim">{dict.footer.location}</p>

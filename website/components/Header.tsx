@@ -39,8 +39,11 @@ export default function Header({ locale }: { locale: Locale }) {
             className="rounded-full border border-line-gold bg-[#f0ead9] p-1"
             priority
           />
-          <span className="font-display hidden whitespace-nowrap text-lg tracking-wide text-gold-bright min-[480px]:inline">
-            {dict.brand.nameShort}
+          <span
+            className="font-display hidden whitespace-nowrap text-lg tracking-wide text-gold-bright min-[480px]:inline"
+            dir="ltr"
+          >
+            MR CHINESE
           </span>
         </Link>
 
